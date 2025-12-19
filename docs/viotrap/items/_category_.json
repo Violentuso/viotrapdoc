@@ -1,0 +1,9 @@
+{
+    "label": "📦 Предметы",
+    "position": 3,
+    "className": "sidebar-icon-items",
+    "link": {
+        "type": "doc",
+        "id": "viotrap/items/items"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "label": "VioTrap",
+    "position": 2,
+    "className": "sidebar-icon-viotrap",
+    "link": {
+        "type": "doc",
+        "id": "viotrap/viotrap"
+    }
+}

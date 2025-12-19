@@ -1,0 +1,61 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Стиль для категории "VioTrap" в боковой панели */
+.sidebar-icon-viotrap > div::before {
+    content: ''; /* Оставляем content пустым, но он необходим для отображения ::before */
+    
+    /* Устанавливаем иконку как фоновое изображение */
+    background-image: url('/img/vt.png'); 
+    
+    /* Контроль размера! background-size гарантирует, что иконка впишется */
+    background-size: contain; /* Иконка масштабируется, чтобы полностью вписаться */
+    background-repeat: no-repeat; /* Предотвращает повторение */
+    background-position: center; /* Центрируем иконку внутри области */
+    
+    width: 31px;    /* <-- Вот здесь устанавливаются размеры */
+    height: 31px;   /* <-- Вот здесь устанавливаются размеры */
+    
+    /* Отступ и выравнивание */
+    margin-right: 5px; 
+    vertical-align: middle;
+    position: relative;
+    top: 0px; /* Небольшая корректировка выравнивания */
+    left: 6px;
+}
+
+.viotrap-header {
+  border-bottom: 1px solid white;
+}
+
+.viotrap-main{
+  margin-top: 25px;
+}
