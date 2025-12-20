@@ -1,49 +1,41 @@
 import React from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-const playerWrapperStyle = {
+const wrapperStyle = {
   position: 'relative',
   paddingTop: '56.25%',
 };
 
-const playerInnerStyle = {
+const videoStyle = {
   position: 'absolute',
   top: 0,
   left: 0,
+  width: '100%',
+  height: '100%',
 };
 
-const OptimizedMdxVideo = ({ src, poster, title = 'Видео-инструкция' }) => {
+const OptimizedMdxVideo = ({ src, poster }) => {
   if (!src) {
-    return <p>Ошибка: Не указан источник видео (src).</p>;
+    return <p>Ошибка: Не указан источник видео.</p>;
   }
 
   return (
-    <BrowserOnly fallback={<div>Загрузка видео…</div>}>
-      {() => {
-        const ReactPlayer = require('react-player').default;
-
-        return (
-          <div style={{ marginBottom: 20 }}>
-            <div style={playerWrapperStyle}>
-              <ReactPlayer
-                url={src}
-                controls
-                width="100%"
-                height="100%"
-                style={playerInnerStyle}
-                light={poster || false}
-                config={{
-                  file: {
-                    attributes: {
-                      poster,
-                    },
-                  },
-                }}
-              />
-            </div>
+    <BrowserOnly>
+      {() => (
+        <div style={{ marginBottom: 20 }}>
+          <div style={wrapperStyle}>
+            <video
+              controls
+              preload="metadata"
+              poster={poster}
+              style={videoStyle}
+            >
+              <source src={src} type="video/mp4" />
+              Ваш браузер не поддерживает видео.
+            </video>
           </div>
-        );
-      }}
+        </div>
+      )}
     </BrowserOnly>
   );
 };
