@@ -1,4 +1,4 @@
-const OptimizedMdxVideo = ({ src, poster, title = 'Видео-инструкция' }) => {
+export default OptimizedMdxVideo = ({ src, poster, title = 'Видео-инструкция' }) => {
   if (!src) {
     return <p>Ошибка: Не указан источник видео (src).</p>;
   }
