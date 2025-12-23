@@ -71,7 +71,7 @@ const config = {
         title: 'Общая информация',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/minecraft_title.svg',
+          src: 'img/minecraft_title.png',
         },
         items: [
           {
