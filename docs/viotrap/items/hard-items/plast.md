@@ -21,6 +21,6 @@ sidebar_position: 1
 
 ### Создание схематики
 
-Читайте подробно в [Создание схематик](/docs/viotrap/guides/schematic-guide.md).
+Читайте подробно в [Создание схематик](/docs/viotrap/guides/schematic-guide.mdx).
 
 
