@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Лёгкие в настройке',
+    Svg: require('').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Наши плагины лёгкие в настройке. Вы в любой момент можете открыть документацию
+        и найти в ней всю информацию про нужный вам плагин.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Практичные и безопасные',
+    Svg: require('').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Наши плагины тестятся на нескольких серверах от 50 до 150 онлайна. Перед публикацией
+        мы всегда проверяем их на наличие уязвимостей и багов, которые могут случится у вас.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Доступность',
+    Svg: require('').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Несмотря на большой функционал, мы практически всегда публикуем наши плагины бесплатно.
+        Если вы хотите заказать плагин, вы всегда можете обратится к нам.(Телеграм - @etern4lal1en).
       </>
     ),
   },
