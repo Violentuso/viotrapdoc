@@ -1,11 +1,11 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-
+const EmptySvg = () => null;
 const FeatureList = [
   {
     title: 'Лёгкие в настройке',
-    Svg: require('').default,
+    Svg: EmptySvg,
     description: (
       <>
         Наши плагины лёгкие в настройке. Вы в любой момент можете открыть документацию
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Практичные и безопасные',
-    Svg: require('').default,
+    Svg: EmptySvg,
     description: (
       <>
         Наши плагины тестятся на нескольких серверах от 50 до 150 онлайна. Перед публикацией
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Доступность',
-    Svg: require('').default,
+    Svg: EmptySvg,
     description: (
       <>
         Несмотря на большой функционал, мы практически всегда публикуем наши плагины бесплатно.

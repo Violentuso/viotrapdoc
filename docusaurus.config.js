@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'VioDev',
   tagline: 'Здесь про плагины...',
-  favicon: 'img/minecraft-title.png',
+  favicon: 'img/minecraft_title.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -71,7 +71,7 @@ const config = {
         title: 'Общая информация',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/minecraft-title.svg',
+          src: 'img/minecraft_title.svg',
         },
         items: [
           {
