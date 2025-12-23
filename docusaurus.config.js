@@ -90,7 +90,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [],
-        copyright: ``,
+        copyright: `Copyright © 2025 Viodev. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
